@@ -42,3 +42,20 @@ function reverseString(str) {
 
 // Example usage:
 console.log(reverseString("world")); // 👉 "dlrow"
+
+// Function to check if a word is a palindrome
+function isPalindrome(str) {
+  // reverse the string
+  const reversed = str.split("").reverse().join("");
+  
+  // check if original and reversed are the same
+  if (str === reversed) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// Example usage:
+console.log(isPalindrome("madam"));  // 👉 true
+console.log(isPalindrome("hello"));  // 👉 false
