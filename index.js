@@ -30,3 +30,15 @@ const fruits = ["apple", "banana", "cherry", "avocado"];
 const result = filterArray(fruits, fruit => fruit.startsWith("a"));
 
 console.log(result); // 👉 ["apple", "avocado"]
+
+
+function reverseString(str) {
+  let reversed = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+  }
+  return reversed;
+}
+
+// Example usage:
+console.log(reverseString("world")); // 👉 "dlrow"
